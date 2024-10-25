@@ -1,4 +1,4 @@
-namespace Models
+namespace Models;
 public class Producto
     {
         public int IdProducto { get; set; }

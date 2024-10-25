@@ -41,4 +41,13 @@ public class ProductoController : ControllerBase
         _productoRepository.Update(id, producto);
         return NoContent();
     }
+    [HttpGet("{id}")]
+    public ActionResult<Producto> GetProductoById(int id)
+    {
+        var producto = _productoRepository.FindById(id);
+        if (producto == null)
+         return NotFound("Producto no encontrado.");
+
+        return Ok(producto);
+    }
 }
