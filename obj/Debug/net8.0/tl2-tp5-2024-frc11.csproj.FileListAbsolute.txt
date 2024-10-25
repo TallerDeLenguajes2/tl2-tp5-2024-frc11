@@ -1,0 +1,8 @@
+C:\Users\Vero\OneDrive\Escritorio\2° C-2024\Taller de lenguaje II\tl2-tp5-2024-frc11\obj\Debug\net8.0\tl2-tp5-2024-frc11.csproj.AssemblyReference.cache
+C:\Users\Vero\OneDrive\Escritorio\2° C-2024\Taller de lenguaje II\tl2-tp5-2024-frc11\obj\Debug\net8.0\tl2-tp5-2024-frc11.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vero\OneDrive\Escritorio\2° C-2024\Taller de lenguaje II\tl2-tp5-2024-frc11\obj\Debug\net8.0\tl2-tp5-2024-frc11.AssemblyInfoInputs.cache
+C:\Users\Vero\OneDrive\Escritorio\2° C-2024\Taller de lenguaje II\tl2-tp5-2024-frc11\obj\Debug\net8.0\tl2-tp5-2024-frc11.AssemblyInfo.cs
+C:\Users\Vero\OneDrive\Escritorio\2° C-2024\Taller de lenguaje II\tl2-tp5-2024-frc11\obj\Debug\net8.0\tl2-tp5-2024-frc11.csproj.CoreCompileInputs.cache
+C:\Users\Vero\OneDrive\Escritorio\2° C-2024\Taller de lenguaje II\tl2-tp5-2024-frc11\obj\Debug\net8.0\tl2-tp5-2024-frc11.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Vero\OneDrive\Escritorio\2° C-2024\Taller de lenguaje II\tl2-tp5-2024-frc11\obj\Debug\net8.0\tl2-tp5-2024-frc11.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Vero\OneDrive\Escritorio\2° C-2024\Taller de lenguaje II\tl2-tp5-2024-frc11\obj\Debug\net8.0\tl2-tp5-2024-frc11.sourcelink.json
