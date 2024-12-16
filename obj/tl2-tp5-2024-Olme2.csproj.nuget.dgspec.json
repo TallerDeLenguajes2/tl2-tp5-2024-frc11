@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Vero\\OneDrive\\Escritorio\\2° C-2024\\Taller de lenguaje II\\tl2-tp5-2024-frc11\\tl2-tp5-2024-frc11.csproj": {}
+    "C:\\Users\\Vero\\OneDrive\\Escritorio\\2° C-2024\\Taller de lenguaje II\\tl2-tp5-2024-frc11\\tl2-tp5-2024-Olme2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Vero\\OneDrive\\Escritorio\\2° C-2024\\Taller de lenguaje II\\tl2-tp5-2024-frc11\\tl2-tp5-2024-frc11.csproj": {
+    "C:\\Users\\Vero\\OneDrive\\Escritorio\\2° C-2024\\Taller de lenguaje II\\tl2-tp5-2024-frc11\\tl2-tp5-2024-Olme2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Vero\\OneDrive\\Escritorio\\2° C-2024\\Taller de lenguaje II\\tl2-tp5-2024-frc11\\tl2-tp5-2024-frc11.csproj",
-        "projectName": "tl2-tp5-2024-frc11",
-        "projectPath": "C:\\Users\\Vero\\OneDrive\\Escritorio\\2° C-2024\\Taller de lenguaje II\\tl2-tp5-2024-frc11\\tl2-tp5-2024-frc11.csproj",
+        "projectUniqueName": "C:\\Users\\Vero\\OneDrive\\Escritorio\\2° C-2024\\Taller de lenguaje II\\tl2-tp5-2024-frc11\\tl2-tp5-2024-Olme2.csproj",
+        "projectName": "tl2-tp5-2024-Olme2",
+        "projectPath": "C:\\Users\\Vero\\OneDrive\\Escritorio\\2° C-2024\\Taller de lenguaje II\\tl2-tp5-2024-frc11\\tl2-tp5-2024-Olme2.csproj",
         "packagesPath": "C:\\Users\\Vero\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Vero\\OneDrive\\Escritorio\\2° C-2024\\Taller de lenguaje II\\tl2-tp5-2024-frc11\\obj\\",
         "projectStyle": "PackageReference",
@@ -18,15 +18,15 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net8.0"
+          "net7.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
+          "net7.0": {
+            "targetAlias": "net7.0",
             "projectReferences": {}
           }
         },
@@ -42,12 +42,12 @@
         }
       },
       "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
+        "net7.0": {
+          "targetAlias": "net7.0",
           "dependencies": {
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
-              "version": "[8.0.10, )"
+              "version": "[7.0.10, )"
             },
             "Microsoft.Data.SQLite": {
               "target": "Package",
@@ -55,7 +55,7 @@
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.6.2, )"
+              "version": "[6.5.0, )"
             }
           },
           "imports": [
@@ -77,7 +77,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }

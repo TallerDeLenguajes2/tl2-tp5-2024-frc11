@@ -1,50 +1,40 @@
 using Microsoft.AspNetCore.Mvc;
-using Models;
 using System.Collections.Generic;
 
 [Route("api/[controller]")]
 [ApiController]
 public class PresupuestosController : ControllerBase
 {
-    private readonly IPresupuestosRepository _presupuestosRepository;
-    private readonly IProductoRepository _productoRepository;
-
-    public PresupuestosController(IPresupuestosRepository presupuestosRepository, IProductoRepository productoRepository)
-    {
-        _presupuestosRepository = presupuestosRepository;
-        _productoRepository = productoRepository;
+    private readonly ILogger<PresupuestosController> _logger;
+    private PresupuestosRepository repositorioPresupuestos;
+    public PresupuestosController(ILogger<PresupuestosController> logger){
+        _logger=logger;
+        repositorioPresupuestos = new PresupuestosRepository();
     }
 
-    [HttpPost]
-    public IActionResult CreatePresupuesto([FromBody] Presupuesto presupuesto)
-    {
-        if (presupuesto == null)
-            return BadRequest("El presupuesto es nulo.");
-
-        _presupuestosRepository.Insert(presupuesto);
-        return CreatedAtAction(nameof(GetPresupuestos), new { id = presupuesto.IdPresupuesto }, presupuesto);
+    [HttpPost("api/Presupuesto")]
+    public IActionResult CrearPresupuesto(Presupuestos presupuesto){
+        repositorioPresupuestos.CrearPresupuesto(presupuesto);
+        return Created("Repositorio creado correctamente", presupuesto);
     }
 
-    [HttpPost("{id}/ProductoDetalle")]
-    public IActionResult AddProductoToPresupuesto(int id, [FromBody] PresupuestoDetalle detalle)
-    {
-        var presupuesto = _presupuestosRepository.FindById(id);
-        if (presupuesto == null)
-            return NotFound("Presupuesto no encontrado.");
-
-        var producto = _productoRepository.FindById(detalle.Producto.IdProducto);
-        if (producto == null)
-            return NotFound("Producto no encontrado.");
-
-        detalle.Producto = producto;
-        presupuesto.Detalle.Add(detalle);
-        return Ok(presupuesto);
+    [HttpPost("api/Presupuesto/{id}/ProductoDetalle")]
+    public IActionResult AgregarProductoAPresupuesto(int idPresupuesto, int idProducto, int cantidad){
+        repositorioPresupuestos.AgregarProducto(idPresupuesto, idProducto, cantidad);
+        return Created("Producto agregado con exito", 1);
     }
 
-    [HttpGet]
-    public ActionResult<IEnumerable<Presupuesto>> GetPresupuestos()
-    {
-        var presupuestos = _presupuestosRepository.FindAll();
-        return Ok(presupuestos);
+    [HttpGet("api/Presupuestos")]
+    public ActionResult<List<Presupuestos>> ObtenerPresupuestos(){
+        return Ok(repositorioPresupuestos.ListarPresupuestosGuardados());
+    }
+    [HttpGet("api/Presupuestos/{id}")]
+    public ActionResult<Presupuestos> ObtenerPresupuestoPorId(int id){
+        return Ok(repositorioPresupuestos.ObtenerPresupuestoPorId(id));
+    }
+    [HttpDelete("api/Presupuestos/{id}")]
+    public IActionResult EliminarPresupuestoPorId(int id){
+        repositorioPresupuestos.EliminarPresupuestoPorId(id);
+        return Ok();
     }
 }
